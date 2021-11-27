@@ -696,6 +696,7 @@ GameObject:
   - component: {fileID: 1652153155318796229}
   - component: {fileID: 1652153155864873495}
   - component: {fileID: 1652153155864873488}
+  - component: {fileID: 3333998193011115230}
   m_Layer: 7
   m_Name: Player Container
   m_TagString: Untagged
@@ -761,6 +762,18 @@ MonoBehaviour:
   gravity: -19.62
   jumpHeight: 3
   turnSmoothTime: 0.1
+--- !u!114 &3333998193011115230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652153155864873489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98f04074f09491d44800454cde9d46cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1652153155939213584
 GameObject:
   m_ObjectHideFlags: 0
