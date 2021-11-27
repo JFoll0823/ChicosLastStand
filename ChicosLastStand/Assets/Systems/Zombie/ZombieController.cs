@@ -18,6 +18,6 @@ public class ZombieController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        agent.SetDestination(player.transform.position);
+        agent.destination = player.transform.position;
     }
 }
