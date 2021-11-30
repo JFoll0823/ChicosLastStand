@@ -9,7 +9,7 @@ public class ZombieController : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] NavMeshAgent agent;
     [SerializeField] string dmgTag;
-    [SerializeField] Vector3 destination;
+   // [SerializeField] Vector3 destination;
 
     int _health = 3;
    
@@ -26,7 +26,7 @@ public class ZombieController : MonoBehaviour
         //Debug.Log("Player Position");a
         //Debug.Log(Player.Instance.gameObject.transform.position);
         agent.SetDestination(Player.Instance.gameObject.transform.position);
-        destination = Player.Instance.gameObject.transform.position;
+        //destination = Player.Instance.gameObject.transform.position;
         //Debug.Log("Agent Destination:");
         //Debug.Log(agent.destination);
     }

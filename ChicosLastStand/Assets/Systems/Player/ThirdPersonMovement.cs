@@ -28,8 +28,8 @@ public class ThirdPersonMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Cursor.lockState = CursorLockMode.Locked;
-        //Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = true;
 
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 

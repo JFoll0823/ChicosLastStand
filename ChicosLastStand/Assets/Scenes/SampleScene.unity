@@ -548,6 +548,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8d9aaac0c3f9134393a7b2db402a42a, type: 3}
+--- !u!4 &540378734 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7101526253631836336, guid: 8e1a716277f92304e9ea2863ec0c1279, type: 3}
+  m_PrefabInstance: {fileID: 7101526254134751371}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &562020983
 GameObject:
   m_ObjectHideFlags: 3
@@ -593,7 +598,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 40
+    FieldOfView: 23
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
@@ -614,7 +619,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 562020983}
-  m_LocalRotation: {x: 0.08602076, y: 0.00000001662337, z: -0.0000000014352748, w: 0.99629337}
+  m_LocalRotation: {x: 0.03202096, y: 0.000000017197559, z: -5.509649e-10, w: 0.9994872}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1073,6 +1078,7 @@ GameObject:
   m_Component:
   - component: {fileID: 927358242}
   - component: {fileID: 927358241}
+  - component: {fileID: 927358243}
   m_Layer: 0
   m_Name: Third Person Camera
   m_TagString: Untagged
@@ -1096,13 +1102,13 @@ MonoBehaviour:
   - m_Script
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
-  m_Priority: 10
+  m_Priority: 5
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 1768938878}
+  m_LookAt: {fileID: 540378734}
   m_Follow: {fileID: 1768938878}
   m_CommonLens: 1
   m_Lens:
-    FieldOfView: 40
+    FieldOfView: 23
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
@@ -1198,6 +1204,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &927358243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927358240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44d70cc20219cd84593f67d248eafe36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Offset: {x: 2, y: 0, z: 0}
+  m_ApplyAfter: 1
+  m_PreserveComposition: 0
 --- !u!1001 &945471690
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1364,7 +1385,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 40
+  field of view: 23
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1389,8 +1410,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.10234594, y: 0.000000033611222, z: -5.8519675e-11, w: 0.99474883}
-  m_LocalPosition: {x: 74.12, y: 54.528557, z: 184.05132}
+  m_LocalRotation: {x: 0.041200925, y: -6.130576e-11, z: -6.873666e-11, w: 0.99915093}
+  m_LocalPosition: {x: 76.12, y: 54.528557, z: 184.05132}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2688,7 +2709,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 40
+    FieldOfView: 23
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
@@ -2709,7 +2730,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1944409479}
-  m_LocalRotation: {x: 0.12215428, y: -0.000000017077527, z: 0.0000000021018332, w: 0.99251115}
+  m_LocalRotation: {x: 0.052336533, y: -0, z: -0, w: 0.9986295}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2823,7 +2844,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 40
+    FieldOfView: 23
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
@@ -2844,7 +2865,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2085678162}
-  m_LocalRotation: {x: 0.1033871, y: 0.000000017114175, z: -0.0000000017789181, w: 0.9946412}
+  m_LocalRotation: {x: 0.04178677, y: -1e-45, z: -0, w: 0.99912655}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2916,6 +2937,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7101526253631836336, guid: 8e1a716277f92304e9ea2863ec0c1279, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.601
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101526253631836337, guid: 8e1a716277f92304e9ea2863ec0c1279, type: 3}
+      propertyPath: m_Name
+      value: CameraTarget
+      objectReference: {fileID: 0}
     - target: {fileID: 7101526254551051765, guid: 8e1a716277f92304e9ea2863ec0c1279, type: 3}
       propertyPath: m_RootOrder
       value: 4

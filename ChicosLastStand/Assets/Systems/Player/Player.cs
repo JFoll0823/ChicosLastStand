@@ -41,6 +41,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            currentPlaceableObject.gameObject.GetComponent<BoxCollider>().enabled = true;
             currentPlaceableObject = null;
         }
     }
