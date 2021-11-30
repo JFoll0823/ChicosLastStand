@@ -5,9 +5,6 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-    [SerializeField] GameObject gameState;
-    [SerializeField] GameObject gameManager;
-
     // Start is called before the first frame update
     void Start()
     {

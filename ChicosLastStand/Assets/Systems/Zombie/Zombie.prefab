@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7794441180085383146
+--- !u!1 &2457624193899612531
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 855489704414523479}
-  - component: {fileID: 1804689485443623216}
-  - component: {fileID: 1804689485443623219}
-  - component: {fileID: 1804689485443623181}
-  - component: {fileID: 1804689485443623218}
+  - component: {fileID: 5039274547908515534}
+  - component: {fileID: 6285861094026071977}
+  - component: {fileID: 6285861094026071978}
+  - component: {fileID: 6285861094026071956}
+  - component: {fileID: 6285861094026071979}
   m_Layer: 8
-  m_Name: Zombie Container 1
+  m_Name: Zombie
   m_TagString: Zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &855489704414523479
+--- !u!4 &5039274547908515534
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7794441180085383146}
+  m_GameObject: {fileID: 2457624193899612531}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 57.25, y: 50.035, z: 211}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3595113135570109687}
+  - {fileID: 9211055871610577518}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1804689485443623216
+--- !u!54 &6285861094026071977
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7794441180085383146}
+  m_GameObject: {fileID: 2457624193899612531}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -51,13 +51,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &1804689485443623219
+--- !u!136 &6285861094026071978
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7794441180085383146}
+  m_GameObject: {fileID: 2457624193899612531}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
@@ -65,32 +65,32 @@ CapsuleCollider:
   m_Height: 3.8530426
   m_Direction: 1
   m_Center: {x: -0.0036792755, y: 1.90868, z: 0}
---- !u!114 &1804689485443623181
+--- !u!114 &6285861094026071956
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7794441180085383146}
+  m_GameObject: {fileID: 2457624193899612531}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7009a56bf150b4845a2cf3e170ce4863, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1652153155864873489, guid: 5f39672372db35341969f35f3ca16337, type: 3}
-  agent: {fileID: 1804689485443623218}
+  player: {fileID: 7101526255080351777, guid: 8e1a716277f92304e9ea2863ec0c1279, type: 3}
+  agent: {fileID: 6285861094026071979}
   dmgLayer: 10
---- !u!195 &1804689485443623218
+--- !u!195 &6285861094026071979
 NavMeshAgent:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7794441180085383146}
+  m_GameObject: {fileID: 2457624193899612531}
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 10
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -102,12 +102,12 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 5
   m_ObstacleAvoidanceType: 4
---- !u!1001 &3922302278610068252
+--- !u!1001 &8673519458144388485
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 855489704414523479}
+    m_TransformParent: {fileID: 5039274547908515534}
     m_Modifications:
     - target: {fileID: -8866314391131972674, guid: 66ad378c9ab0f5743bf6046bfb30c36f, type: 3}
       propertyPath: m_Layer
@@ -407,8 +407,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66ad378c9ab0f5743bf6046bfb30c36f, type: 3}
---- !u!4 &3595113135570109687 stripped
+--- !u!4 &9211055871610577518 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 66ad378c9ab0f5743bf6046bfb30c36f, type: 3}
-  m_PrefabInstance: {fileID: 3922302278610068252}
+  m_PrefabInstance: {fileID: 8673519458144388485}
   m_PrefabAsset: {fileID: 0}

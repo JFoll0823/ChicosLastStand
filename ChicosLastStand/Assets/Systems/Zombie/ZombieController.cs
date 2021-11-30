@@ -22,7 +22,11 @@ public class ZombieController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        agent.destination = player.transform.position;
+        Debug.Log("Player Position");
+        Debug.Log(player.gameObject.transform.position);
+        agent.SetDestination(player.gameObject.transform.position);
+        Debug.Log("Agent Destination:");
+        Debug.Log(agent.destination);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -32,6 +36,7 @@ public class ZombieController : MonoBehaviour
             _health -= 3;
             if(_health <= 0)
             {
+                GameplayManager.Instance.zCount--;
                 Destroy(gameObject);
             }
         }

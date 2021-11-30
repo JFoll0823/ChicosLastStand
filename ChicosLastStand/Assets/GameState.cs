@@ -27,6 +27,7 @@ public class GameState : MonoBehaviour
             _gameStartText.SetActive(false);
             isGameStarted = true;
             Time.timeScale = 1;
+            GameplayManager.Instance.GameStarted();
         }
     }
 
