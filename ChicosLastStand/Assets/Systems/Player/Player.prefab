@@ -1877,6 +1877,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98f04074f09491d44800454cde9d46cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spikeTrapPrefab: {fileID: 17980654546421792, guid: b8d9aaac0c3f9134393a7b2db402a42a, type: 3}
+  spikeTrapHotKey: 49
+  currentPlaceableObject: {fileID: 0}
 --- !u!1 &7101526255189193056
 GameObject:
   m_ObjectHideFlags: 0

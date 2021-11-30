@@ -8,7 +8,7 @@ public class ZombieController : MonoBehaviour
 
     [SerializeField] GameObject player;
     [SerializeField] NavMeshAgent agent;
-    [SerializeField] int dmgLayer;
+    [SerializeField] string dmgTag;
 
     int _health = 3;
    
@@ -23,15 +23,15 @@ public class ZombieController : MonoBehaviour
     void Update()
     {
         Debug.Log("Player Position");
-        Debug.Log(player.gameObject.transform.position);
-        agent.SetDestination(player.gameObject.transform.position);
+        Debug.Log(Player.Instance.gameObject.transform.position);
+        agent.SetDestination(Player.Instance.gameObject.transform.position);
         Debug.Log("Agent Destination:");
         Debug.Log(agent.destination);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.layer == dmgLayer)
+        if(other.gameObject.tag == dmgTag)
         {
             _health -= 3;
             if(_health <= 0)

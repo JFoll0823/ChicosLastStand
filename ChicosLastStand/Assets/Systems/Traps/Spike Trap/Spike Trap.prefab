@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3171109506420312530}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Spike Trap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 6641623244321550924}
   - component: {fileID: 5214574680742838350}
   - component: {fileID: 5660129850273794195}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153,7 +153,7 @@ GameObject:
   - component: {fileID: 2355890061855555387}
   - component: {fileID: 392568060881138223}
   - component: {fileID: 7208243209978365087}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: statue_obelisk (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 3868494656475469747}
   - component: {fileID: 4468992939044527593}
   - component: {fileID: 3721734045621961389}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: statue_obelisk (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -315,7 +315,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 780577509129418141}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: Spike Row (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -351,9 +351,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1551835561447283466}
   - component: {fileID: 7213367309974253808}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: Spikes
-  m_TagString: Untagged
+  m_TagString: Damage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -401,7 +401,7 @@ GameObject:
   - component: {fileID: 3860911450638403257}
   - component: {fileID: 9039459763268476249}
   - component: {fileID: 7439178698251855948}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: statue_obelisk (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -483,7 +483,7 @@ GameObject:
   - component: {fileID: 92551344719847545}
   - component: {fileID: 5058686086505588479}
   - component: {fileID: 6275815975000973010}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: statue_obelisk (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -565,7 +565,7 @@ GameObject:
   - component: {fileID: 1412324197681061037}
   - component: {fileID: 7080134047899214491}
   - component: {fileID: 6395723126152364365}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: statue_obelisk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -647,7 +647,7 @@ GameObject:
   - component: {fileID: 2620691818639299347}
   - component: {fileID: 4601641666632951990}
   - component: {fileID: 5462864752894320877}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: statue_obelisk (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -729,7 +729,7 @@ GameObject:
   - component: {fileID: 7465362659723951165}
   - component: {fileID: 7654228803200290809}
   - component: {fileID: 6458396858482898148}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: statue_obelisk (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -811,7 +811,7 @@ GameObject:
   - component: {fileID: 1601693517694906528}
   - component: {fileID: 3997367524993877072}
   - component: {fileID: 527417659709204203}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: statue_obelisk (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -893,7 +893,7 @@ GameObject:
   - component: {fileID: 8376888199035401513}
   - component: {fileID: 5780999424707552693}
   - component: {fileID: 8477051583929018848}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: statue_obelisk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -975,7 +975,7 @@ GameObject:
   - component: {fileID: 8749867316250835867}
   - component: {fileID: 4564373554850719653}
   - component: {fileID: 3478270734376422397}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: statue_obelisk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1057,7 +1057,7 @@ GameObject:
   - component: {fileID: 1412640918830537709}
   - component: {fileID: 6388635872732638088}
   - component: {fileID: 1692250728905111587}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: statue_obelisk (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1137,7 +1137,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8847542000665559241}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: Spike Row (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1174,7 +1174,7 @@ GameObject:
   - component: {fileID: 90366467805875708}
   - component: {fileID: 3192561023118188501}
   - component: {fileID: 7179026747106964911}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: statue_obelisk (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1256,7 +1256,7 @@ GameObject:
   - component: {fileID: 6074496029528451184}
   - component: {fileID: 5982217757334280357}
   - component: {fileID: 6413433037773354982}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: statue_obelisk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1338,7 +1338,7 @@ GameObject:
   - component: {fileID: 8825743771516486632}
   - component: {fileID: 2133356321669572779}
   - component: {fileID: 2598847301460244144}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: statue_obelisk (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1420,7 +1420,7 @@ GameObject:
   - component: {fileID: 4000103907890672794}
   - component: {fileID: 5758316932082380432}
   - component: {fileID: 469556897898994348}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: statue_obelisk (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1500,7 +1500,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5898875790988360490}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: Spike Row (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1537,7 +1537,7 @@ GameObject:
   - component: {fileID: 8908386102574148195}
   - component: {fileID: 2363403443105298687}
   - component: {fileID: 2588036721418067395}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: statue_obelisk (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1617,7 +1617,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7434962607940218491}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: Spike Row (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1654,7 +1654,7 @@ GameObject:
   - component: {fileID: 2311290861642104314}
   - component: {fileID: 1511062194821965894}
   - component: {fileID: 5880974312135146078}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: statue_obelisk (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1736,7 +1736,7 @@ GameObject:
   - component: {fileID: 6705794845533898653}
   - component: {fileID: 485180733491736391}
   - component: {fileID: 6064270093887563250}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: statue_obelisk (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1818,7 +1818,7 @@ GameObject:
   - component: {fileID: 84655888312279991}
   - component: {fileID: 170229588115847200}
   - component: {fileID: 8555911763706860305}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: statue_obelisk (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1900,7 +1900,7 @@ GameObject:
   - component: {fileID: 8199449557450812751}
   - component: {fileID: 55839128078341888}
   - component: {fileID: 188022948597171305}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: statue_obelisk (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1980,7 +1980,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6828101892739635430}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: Spike Row
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2017,7 +2017,7 @@ GameObject:
   - component: {fileID: 717951344406156300}
   - component: {fileID: 3840225540591778895}
   - component: {fileID: 6410668535095168439}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: statue_obelisk (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2099,7 +2099,7 @@ GameObject:
   - component: {fileID: 5317241820862995066}
   - component: {fileID: 428279530665187031}
   - component: {fileID: 6166241617975006422}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: statue_obelisk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2181,7 +2181,7 @@ GameObject:
   - component: {fileID: 5339644186487963775}
   - component: {fileID: 5763880489528120763}
   - component: {fileID: 5292273948627228148}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: statue_obelisk (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2263,7 +2263,7 @@ GameObject:
   - component: {fileID: 7812398891423204527}
   - component: {fileID: 7873442015283053330}
   - component: {fileID: 392044482299225244}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: statue_obelisk (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2345,7 +2345,7 @@ GameObject:
   - component: {fileID: 8062476267808200207}
   - component: {fileID: 3810751559780852419}
   - component: {fileID: 741526630432741410}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: statue_obelisk (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

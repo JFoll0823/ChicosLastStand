@@ -79,7 +79,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 7101526255080351777, guid: 8e1a716277f92304e9ea2863ec0c1279, type: 3}
   agent: {fileID: 6285861094026071979}
-  dmgLayer: 10
+  dmgTag: Damage
 --- !u!195 &6285861094026071979
 NavMeshAgent:
   m_ObjectHideFlags: 0
