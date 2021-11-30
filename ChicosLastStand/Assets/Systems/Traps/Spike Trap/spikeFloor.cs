@@ -5,6 +5,7 @@ using UnityEngine;
 public class spikeFloor : MonoBehaviour
 {
     [SerializeField] GameObject spikes;
+    [SerializeField] GameObject desired;
     Vector3 aPos;
 
     //spike rise vars
@@ -23,9 +24,9 @@ public class spikeFloor : MonoBehaviour
         //spikes rise on trigger
         if (isTriggering && (Time.time - start > .75))
         {
-            if (spikes.transform.position.y <= aPos.y + 1)
+            if (Vector3.Distance(spikes.transform.position, desired.transform.position) >= .9)
             {
-                spikes.transform.Translate(0, Time.deltaTime * 10, 0);
+                spikes.transform.Translate(Vector3.up * Time.deltaTime * 10, Space.Self);
             }
             else
             {
