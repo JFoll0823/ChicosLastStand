@@ -4,64 +4,77 @@ using UnityEngine;
 
 public class GameplayManager : MonoBehaviour
 {
-    public static GameplayManager Instance;
+	public static GameplayManager Instance;
 
-    public int zCount;
+	public int zCount;
 
-    bool _roundActive;
-    int _currentRound;
-    float _rCountdown;
+	[SerializeField] bool roundsDisabled;
 
-    [SerializeField] GameObject zombie;
-    [SerializeField] GameObject spawnArea;
-    [SerializeField] int numSpawns;
+	bool _roundActive;
+	int _currentRound;
+	float _rCountdown;
 
-    private void Awake()
-    {
-        Instance = this;
-    }
+	[SerializeField] GameObject zombie;
+	[SerializeField] GameObject spawnArea;
+	[SerializeField] int numSpawns;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        _roundActive = false;
-        _currentRound = 0;
-        zCount = 0;
-    }
+	private void Awake()
+	{
+		Instance = this;
+	}
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (zCount <= 0 && _roundActive)
+	// Start is called before the first frame update
+	void Start()
+	{
+		_roundActive = false;
+		_currentRound = 0;
+		zCount = 0;
+	}
+
+	// Update is called once per frame
+	void Update()
+	{
+        if (!roundsDisabled)
         {
-            _rCountdown = Time.time;
-            _roundActive = false;
-        }
+			if (zCount <= 0 && _roundActive)
+			{
+				_rCountdown = Time.time;
+				_roundActive = false;
+			}
 
-        if (!_roundActive && Time.time - _rCountdown >= 5)
-        {
-            SpawnEnemies();
-            _currentRound++;
-            _roundActive = true;
-        }
+			if (!_roundActive && Time.time - _rCountdown >= 5)
+			{
+				SpawnEnemies();
+				_currentRound++;
+				if(_currentRound == 6)
+                {
+					GameState.Instance.InitiateWin();
+                }
+                else
+                {
+					_roundActive = true;
+                }
+				
+			}
+		}
 
-    }
+	}
 
-    void SpawnEnemies()
-    {
-        if (GameState.Instance.isGameStarted)
-        {
-            for(int i = 0; i < _currentRound*3; i++)
-            {
-                string randSpawn = Random.Range(1, numSpawns + 1).ToString();
-                Instantiate(zombie, spawnArea.transform.Find(randSpawn).transform.position, Quaternion.identity);
-                zCount++;
-            }
-        }
-    }
+	void SpawnEnemies()
+	{
+		if (GameState.Instance.isGameStarted)
+		{
+			for(int i = 0; i < _currentRound*3; i++)
+			{
+				string randSpawn = Random.Range(1, numSpawns + 1).ToString();
+				Instantiate(zombie, spawnArea.transform.Find(randSpawn).transform.position, Quaternion.identity);
+				zCount++;
+			}
+		}
+	}
 
-    public void GameStarted()
-    {
-        _rCountdown = Time.time;
-    }
+	public void GameStarted()
+	{
+		_rCountdown = Time.time;
+	}
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameState : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class GameState : MonoBehaviour
 
     [SerializeField] GameObject _gameStartText;
     [SerializeField] GameObject _gameOverText;
+    [SerializeField] GameObject _winText;
 
     private void Awake()
     {
@@ -29,12 +31,27 @@ public class GameState : MonoBehaviour
             Time.timeScale = 1;
             GameplayManager.Instance.GameStarted();
         }
+        if(isGameOver && Input.GetButtonDown("Submit"))
+        {
+            SceneManager.LoadScene("SampleScene");
+        }
+
     }
 
     public void InitiateGameOver()
     {
         _gameOverText.SetActive(true);
         Time.timeScale = 0;
+        isGameStarted = false;
+        isGameOver = true;
+    }
+
+    public void InitiateWin()
+    {
+        _winText.SetActive(true);
+        Time.timeScale = 0;
+        isGameStarted = false;
+        isGameOver = true;
     }
 
 

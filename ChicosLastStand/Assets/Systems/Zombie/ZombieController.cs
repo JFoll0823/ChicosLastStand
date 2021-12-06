@@ -7,11 +7,14 @@ public class ZombieController : MonoBehaviour
 {
 
     [SerializeField] GameObject player;
+    [SerializeField] GameObject objective;
     [SerializeField] NavMeshAgent agent;
     [SerializeField] string dmgTag;
    // [SerializeField] Vector3 destination;
 
     int _health = 3;
+    float objDistance;
+    float playerDistance;
    
 
     // Start is called before the first frame update
@@ -23,12 +26,20 @@ public class ZombieController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log("Player Position");a
-        //Debug.Log(Player.Instance.gameObject.transform.position);
-        agent.SetDestination(Player.Instance.gameObject.transform.position);
-        //destination = Player.Instance.gameObject.transform.position;
-        //Debug.Log("Agent Destination:");
-        //Debug.Log(agent.destination);
+        playerDistance = Vector3.Distance(gameObject.transform.position, player.transform.position);
+        objDistance = Vector3.Distance(gameObject.transform.position, objective.transform.position);
+
+        Debug.Log("PD: " + playerDistance);
+        Debug.Log("OD: " + objDistance);
+
+        if (playerDistance <= objDistance)
+        {
+            agent.SetDestination(Player.Instance.gameObject.transform.position);
+        }
+        else
+        {
+            agent.SetDestination(objective.gameObject.transform.position);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
