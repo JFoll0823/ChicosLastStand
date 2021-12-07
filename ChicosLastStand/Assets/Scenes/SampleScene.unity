@@ -2183,7 +2183,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1740358634}
   - component: {fileID: 1740358633}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: NavMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2208,7 +2208,7 @@ MonoBehaviour:
   m_Center: {x: 0, y: 2, z: 0}
   m_LayerMask:
     serializedVersion: 2
-    m_Bits: 631
+    m_Bits: 2679
   m_UseGeometry: 0
   m_DefaultArea: 0
   m_IgnoreNavMeshAgent: 1

@@ -22,7 +22,7 @@ public class spikeFloor : MonoBehaviour
     void Update()
     {
         //spikes rise on trigger
-        if (isTriggering && (Time.time - start > .75))
+        if (isTriggering && (Time.time - start > .5))
         {
             if (Vector3.Distance(spikes.transform.position, desired.transform.position) >= .9)
             {
