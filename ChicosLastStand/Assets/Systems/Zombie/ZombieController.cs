@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class ZombieController : MonoBehaviour
 {
 
-    [SerializeField] GameObject player;
+    GameObject player;
     [SerializeField] GameObject objective;
     [SerializeField] NavMeshAgent agent;
     [SerializeField] string dmgTag;
@@ -15,12 +15,14 @@ public class ZombieController : MonoBehaviour
     int _health = 3;
     float objDistance;
     float playerDistance;
+    Vector3 lastPosition;
    
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.FindGameObjectWithTag("Player");
+        lastPosition = transform.position;
     }
 
     // Update is called once per frame
@@ -34,12 +36,21 @@ public class ZombieController : MonoBehaviour
 
         if (playerDistance <= objDistance)
         {
-            agent.SetDestination(Player.Instance.gameObject.transform.position);
+            agent.SetDestination(player.transform.position);
         }
         else
         {
-            agent.SetDestination(objective.gameObject.transform.position);
+            agent.SetDestination(objective.transform.position);
         }
+
+        Debug.Log("Destination: " + agent.destination);
+
+    }
+
+    private void LateUpdate()
+    {
+        testWorking();
+        lastPosition = transform.position;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -52,6 +63,15 @@ public class ZombieController : MonoBehaviour
                 GameplayManager.Instance.zCount--;
                 Destroy(gameObject);
             }
+        }
+    }
+
+    void testWorking()
+    {
+        if(lastPosition == transform.position)
+        {
+            agent.enabled = false;
+            agent.enabled = true;
         }
     }
 }
