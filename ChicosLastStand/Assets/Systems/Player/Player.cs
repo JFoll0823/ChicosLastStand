@@ -35,6 +35,11 @@ public class Player : MonoBehaviour
 			RotateFromMouseWheel();
 			ReleaseIfClicked();
 		}
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+			Time.timeScale = 0;
+        }
 	}
 
 	private void ReleaseIfClicked()

@@ -33,7 +33,7 @@ public class GameState : MonoBehaviour
         }
         if(isGameOver && Input.GetButtonDown("Submit"))
         {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene(0);
         }
 
     }

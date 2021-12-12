@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameplayManager : MonoBehaviour
 {
@@ -11,12 +12,15 @@ public class GameplayManager : MonoBehaviour
 	[SerializeField] bool roundsDisabled;
 
 	bool _roundActive;
-	int _currentRound;
+	public int currentRound;
 	float _rCountdown;
 
 	[SerializeField] GameObject zombie;
 	[SerializeField] GameObject spawnArea;
 	[SerializeField] int numSpawns;
+
+	[SerializeField] Text hudRound;
+	[SerializeField] Text hudEnemies;
 
 	private void Awake()
 	{
@@ -27,7 +31,7 @@ public class GameplayManager : MonoBehaviour
 	void Start()
 	{
 		_roundActive = false;
-		_currentRound = 0;
+		currentRound = 0;
 		zCount = 0;
 	}
 
@@ -42,11 +46,12 @@ public class GameplayManager : MonoBehaviour
 				_roundActive = false;
 			}
 
-			if (!_roundActive && Time.time - _rCountdown >= 5)
+			if (!_roundActive && Time.time - _rCountdown >= 3)
 			{
 				SpawnEnemies();
-				_currentRound++;
-				if(_currentRound == 6)
+				currentRound++;
+
+				if(currentRound == 6)
                 {
 					GameState.Instance.InitiateWin();
                 }
@@ -57,14 +62,14 @@ public class GameplayManager : MonoBehaviour
 				
 			}
 		}
-
+		updateHud();
 	}
 
 	void SpawnEnemies()
 	{
 		if (GameState.Instance.isGameStarted)
 		{
-			for(int i = 0; i < _currentRound*3; i++)
+			for(int i = 0; i < (currentRound + 1)*3; i++)
 			{
 				string randSpawn = Random.Range(1, numSpawns + 1).ToString();
 				Instantiate(zombie, spawnArea.transform.Find(randSpawn).transform.position, Quaternion.identity);
@@ -76,5 +81,12 @@ public class GameplayManager : MonoBehaviour
 	public void GameStarted()
 	{
 		_rCountdown = Time.time;
+	}
+
+	private void updateHud()
+    {
+		hudRound.text = "Round: " + currentRound;
+		hudEnemies.text = "Zombies: " + zCount;
+
 	}
 }
