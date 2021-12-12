@@ -10,6 +10,7 @@ public class ZombieController : MonoBehaviour
     [SerializeField] GameObject objective;
     [SerializeField] NavMeshAgent agent;
     [SerializeField] string dmgTag;
+    [SerializeField] int speed = 5;
    // [SerializeField] Vector3 destination;
 
     int _health = 3;
@@ -44,8 +45,16 @@ public class ZombieController : MonoBehaviour
          */
         //Vector3 moveVector = transform.position - player.transform.position;
 
-        transform.LookAt(player.transform.position, Vector3.up);
-        transform.position = Vector3.MoveTowards(transform.position, player.transform.position, .01f);
+        if(playerDistance <= objDistance)
+        {
+            transform.LookAt(player.transform.position, Vector3.up);
+            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, .01f * speed);
+        }
+        else
+        {
+            transform.LookAt(objective.transform.position, Vector3.up);
+            transform.position = Vector3.MoveTowards(transform.position, objective.transform.position, .01f * speed);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
